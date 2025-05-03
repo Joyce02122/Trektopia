@@ -24,8 +24,8 @@ Users can revisit their routes, mark important moments, add personal notes and p
 
 ## Development Roadmap
 
-| Week | Tasks |
-| --- | --- |
+| Week | Tasks | Process
+| --- | --- |--- |
 | Week 1 | Project planning and user research |
 | Week 2 | User journey mapping and persona creation |
 | Week 3 | Initial UI wireframes and interaction design |
