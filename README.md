@@ -5,6 +5,8 @@ Trektopia is an interactive and narrative-driven platform designed for explorers
 
 Users can revisit their routes, mark important moments, add personal notes and photos, and even have a chosen animal companion join them throughout the journey. The goal of Trektopia is to turn the simple act of reviewing data into an emotionally engaging, interactive narrative.  
 
+*TrailGuard: 
+
 ## Target Users and Their Needs  
 - **General Users**: People who want an easy yet fun way to document their everyday adventures and memories without needing complex journaling.  
 - **Outdoor Enthusiasts / Hikers**: Those who want to visually track their routes and milestones, while also capturing the emotions and highlights of their trips.  
