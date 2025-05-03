@@ -1,11 +1,9 @@
 # Trektopia – Interactive Journey Recap Platform
 
 ## Project Objectives  
-Trektopia is an interactive and narrative-driven platform designed for explorers, hikers, and anyone who loves documenting their journeys. Building on data collected by TrailGuard (such as location, environmental parameters, and timelines), Trektopia transforms these into a story of your travels.  
+Trektopia is an interactive and narrative-driven platform designed for explorers, hikers, and anyone who loves documenting their journeys. Building on data collected by TrailGuard (such as location, environmental parameters, and timelines), Trektopia transforms these into a story of your travels. Users can revisit their routes, mark important moments, add personal notes and photos, and even have a chosen animal companion join them throughout the journey. The goal of Trektopia is to turn the simple act of reviewing data into an emotionally engaging, interactive narrative.  
 
-Users can revisit their routes, mark important moments, add personal notes and photos, and even have a chosen animal companion join them throughout the journey. The goal of Trektopia is to turn the simple act of reviewing data into an emotionally engaging, interactive narrative.  
-
-*TrailGuard: A hiking device developed in another course project (UW TECHIN515). It uses LoRa-Mesh technology to enable reliable, long-range communication between team members in remote areas—helping them stay connected even without cellular signals. It also collects real-time environmental and activity data such as GPS location, altitude, temperature, humidity, and motion.
+**TrailGuard:** A hiking device developed in another course project (UW TECHIN515). It uses LoRa-Mesh technology to enable reliable, long-range communication between team members in remote areas—helping them stay connected even without cellular signals. It also collects real-time environmental and activity data such as GPS location, altitude, temperature, humidity, and motion.
 
 ## Target Users and Their Needs  
 - **General Users**: People who want an easy yet fun way to document their everyday adventures and memories without needing complex journaling.  
