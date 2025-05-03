@@ -30,7 +30,7 @@ Users can revisit their routes, mark important moments, add personal notes and p
 | Week 2 | User journey mapping and persona creation |
 | Week 3 | Initial UI wireframes and interaction design |
 | Week 4 | Backend architecture and database setup |
-| Week 5 | Path data parsing and memory tagging features |
+| Week 5 | Path data parsing and memory tagging features | ongoing
 | Week 6 | Designing animated journey recap flow |
 | Week 7 | Developing animal companion and emotion recording system |
 | Week 8 | Front-end and back-end integration, user testing |
