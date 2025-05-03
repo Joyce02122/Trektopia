@@ -15,7 +15,7 @@ Users can revisit their routes, mark important moments, add personal notes and p
 1. **Interactive Journey Recap Generator**  
    A feature that automatically converts your map and timeline data into a dynamic journey story, showing your route, stops, and personal notes/photos.
 
-2. **Memory Node Visualization on the Map**  
+2. **Memory Node Visualization**  
    Interactive memory points on the map where users can "check in" at certain moments of their journey. These nodes display photos, short notes, or voice clips related to that moment, providing users with a chance to reflect on their experiences.
 
 3. **Team Communication Recap**  
