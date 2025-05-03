@@ -1,4 +1,4 @@
-## Trektopia – Interactive Journey Recap and Companion Recording Platform
+## Trektopia – Interactive Journey Recap Platform
 
 ### Project Objectives
 Trektopia is an interactive and narrative-driven platform designed for explorers, hikers, and anyone who loves documenting their journeys. Building on data collected by TrailGuard (such as location, environmental parameters, and timelines), Trektopia transforms these into a story of your travels.
