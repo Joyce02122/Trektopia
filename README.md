@@ -49,5 +49,5 @@ Users can revisit their routes, mark important moments, add personal notes and p
   By adding animal companions and emotional tracking, users will form a deeper emotional connection with their journey, creating a unique and personal recap.
 
 ## Contact Information of the Team
-Joyce Chou ychou3@uw.edu
+Joyce Chou ychou3@uw.edu  
 Katherine Chen ejchen99@uw.edu
