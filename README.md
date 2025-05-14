@@ -6,7 +6,11 @@ Trektopia is an interactive and narrative-driven platform designed for explorers
 
 Users can revisit their routes, mark important moments, add personal notes and photos, and even have a chosen animal companion join them throughout the journey. The goal of Trektopia is to turn the simple act of reviewing data into an emotionally engaging, interactive narrative.
 
+<<<<<<< HEAD
 **＊TrailGuard:**A hiking device developed in another course project (UW TECHIN515). It uses LoRa-Mesh technology to enable reliable, long-range communication between team members in remote areas—helping them stay connected even without cellular signals. It also collects real-time environmental and activity data such as GPS location, altitude, temperature, humidity, and motion.
+=======
+**＊TrailGuard:** A hiking device developed in another course project (UW TECHIN515). It uses LoRa-Mesh technology to enable reliable, long-range communication between team members in remote areas—helping them stay connected even without cellular signals. It also collects real-time environmental and activity data such as GPS location, altitude, temperature, humidity, and motion.
+>>>>>>> 162102bf7b09aff49a8d33d14ba19797948a4518
 
 ---
 
