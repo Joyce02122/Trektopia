@@ -147,22 +147,29 @@ export default function TeamCollaboration() {
   };
 
   return (
-    <Box>
-      <Typography variant="h4" gutterBottom>
+    <Box sx={{ 
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2,
+      width: '100%',
+      flex: 1
+    }}>
+      <Typography variant="h4" gutterBottom sx={{ color: 'primary.main', mb: 3, ml: 2, mt: 2 }}>
         Team Collaboration
       </Typography>
 
       {/* Alert Section */}
       {teamMembers.some((member) => member.status === 'sos') && (
-        <Alert severity="error" sx={{ mb: 3 }}>
+        <Alert severity="error" sx={{ width: '100%' }}>
           <strong>SOS Alert:</strong> Team member requires immediate assistance!
         </Alert>
       )}
 
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={2} sx={{ flex: 1, width: '100%' }}>
         {/* Team Members List */}
         <Grid item xs={12} md={4}>
-          <Paper sx={{ p: 2, maxWidth: 600, mx: 'auto' }}>
+          <Paper sx={{ p: 2, height: '100%' }}>
             <Typography variant="h6" gutterBottom>
               Team Members
             </Typography>
@@ -221,9 +228,7 @@ export default function TeamCollaboration() {
         {/* Map Section */}
         <Grid item xs={12} md={8}>
           <Paper sx={{ 
-            height: '500px', 
-            maxWidth: '1200px', 
-            mx: 'auto',
+            height: '100%',
             overflow: 'hidden',
             borderRadius: '12px',
             boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
@@ -265,7 +270,7 @@ export default function TeamCollaboration() {
 
         {/* Recent Messages */}
         <Grid item xs={12}>
-          <Card sx={{ maxWidth: 1200, mx: 'auto' }}>
+          <Card sx={{ width: '100%' }}>
             <CardContent>
               <Typography variant="h6" gutterBottom>
                 Recent Messages

@@ -3,17 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Map as MapIcon, Group as GroupIcon, Settings as SettingsIcon, Add as AddIcon, Bluetooth as BluetoothIcon, Wifi as WifiIcon, Usb as UsbIcon, SignalCellularAlt as SignalIcon, BatteryFull as BatteryIcon } from '@mui/icons-material';
 import { useState } from 'react';
 
-// Add styles for gradient text
-const styles = {
-  gradientText: {
-    background: 'linear-gradient(45deg, #4CAF50, #81C784)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-    fontWeight: 600,
-  },
-};
-
-export default function Dashboard() {
+export default function Home() {
   console.log('Home component rendering');
   
   const navigate = useNavigate();
@@ -90,18 +80,17 @@ export default function Dashboard() {
       width: '100%',
       flex: 1
     }}>
-      <Box sx={{ p: 3 }}>
-        <Typography 
-          variant="h4" 
-          sx={{ 
-            mb: 3,
-            letterSpacing: '-0.5px',
-            ...styles.gradientText,
-          }}
-        >
-          Welcome to Trektopia!
-        </Typography>
-      </Box>
+      <Typography 
+        variant="h4" 
+        sx={{ 
+          color: 'primary.main',
+          fontWeight: 600,
+          letterSpacing: '-0.5px',
+          mb: 1
+        }}
+      >
+        Dashboard
+      </Typography>
       
       <Paper sx={{ 
         p: 3, 

@@ -1,13 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import Layout from './components/Layout';
-import Dashboard from './pages/Dashboard';
-import JourneyRecap from './pages/JourneyRecap';
-import TeamCollaboration from './pages/TeamCollaboration';
-import Settings from './pages/Settings';
+import { createTheme } from '@mui/material/styles';
 
-// Create a custom theme with green color palette
 const theme = createTheme({
   palette: {
     mode: 'light',
@@ -71,24 +63,4 @@ const theme = createTheme({
   },
 });
 
-function App() {
-  console.log('App component rendering');
-  
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/journey" element={<JourneyRecap />} />
-            <Route path="/team" element={<TeamCollaboration />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </Layout>
-      </Router>
-    </ThemeProvider>
-  );
-}
-
-export default App;
+export default theme; 
