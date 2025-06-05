@@ -19,10 +19,10 @@ const root = createRoot(rootElement)
 try {
   console.log('Attempting to render App component...')
   root.render(
-    <StrictMode>
-      <App />
-    </StrictMode>,
-  )
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
   console.log('App rendered successfully')
 } catch (error) {
   console.error('Error rendering app:', error)

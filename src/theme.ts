@@ -23,10 +23,23 @@ const theme = createTheme({
     h4: {
       fontWeight: 600,
       color: '#2e7d32',
+      fontSize: '2rem',
+      lineHeight: 1.2,
+      letterSpacing: '-0.5px',
     },
     h6: {
       fontWeight: 500,
       color: '#2e7d32',
+      fontSize: '1.25rem',
+      lineHeight: 1.4,
+    },
+    body1: {
+      fontSize: '1rem',
+      lineHeight: 1.5,
+    },
+    body2: {
+      fontSize: '0.875rem',
+      lineHeight: 1.43,
     },
   },
   components: {
@@ -63,4 +76,4 @@ const theme = createTheme({
   },
 });
 
-export default theme; 
+export default theme;
