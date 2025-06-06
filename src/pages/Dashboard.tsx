@@ -25,7 +25,7 @@ export default function Dashboard() {
   const [connectedDevices, setConnectedDevices] = useState([
     {
       id: 1,
-      name: 'GPS Tracker #1',
+      name: 'TrailGuard #1',
       type: 'bluetooth',
       status: 'connected',
       battery: 85,
@@ -34,12 +34,11 @@ export default function Dashboard() {
     },
     {
       id: 2,
-      name: 'Weather Station',
-      type: 'http',
-      status: 'connected',
-      battery: 92,
-      signal: 'strong',
-      lastSeen: '1 min ago'
+      name: 'TrailGuard #2',
+      type: 'bluetooth',
+      status: 'disconnected',
+      battery: 0,
+      lastSeen: '10 mins ago'
     }
   ]);
 
@@ -86,15 +85,15 @@ export default function Dashboard() {
       height: '100%',
       display: 'flex',
       flexDirection: 'column',
-      gap: 3,
+      gap: 1.5,
       width: '100%',
       flex: 1
     }}>
-      <Box sx={{ p: 3 }}>
+      <Box sx={{ p: 1 }}>
         <Typography 
           variant="h4" 
           sx={{ 
-            mb: 3,
+            mb: 2.5,
             letterSpacing: '-0.5px',
             ...styles.gradientText,
           }}
@@ -229,19 +228,21 @@ export default function Dashboard() {
                       {device.name}
                     </Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                      <Chip 
-                        size="small" 
-                        label={device.status} 
-                        color={device.status === 'connected' ? 'success' : 'error'}
-                        sx={{ 
-                          height: 24,
-                          borderRadius: 1.5,
-                          fontWeight: 500,
-                          '& .MuiChip-label': {
-                            px: 1.5
-                          }
-                        }}
-                      />
+                    <Chip 
+  size="small" 
+  label={device.status} 
+  color={device.status === 'connected' ? 'success' : 'error'}
+  sx={{ 
+    height: 24,
+    borderRadius: 1.5,
+    fontWeight: 500,
+    '& .MuiChip-label': {
+      px: 1.5
+    },
+    bgcolor: device.status === 'disconnected' ? 'grey.200' : undefined,
+    color: device.status === 'disconnected' ? 'rgba(244, 67, 54, 0.7)' : undefined
+  }}
+/>
                       <Box sx={{ 
                         display: 'flex', 
                         alignItems: 'center', 
