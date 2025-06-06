@@ -34,73 +34,75 @@ import L from 'leaflet';
 const Grid = styled(MuiGrid)({});
 
 // Create custom icons for markers
-const createCustomIcon = (icon: JSX.Element) => {
-  return L.divIcon({
-    className: 'custom-icon',
-    html: `<div style="
-      background-color: #2e7d32;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      border: 2px solid white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    ">${icon}</div>`,
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
-  });
-};
+const createCustomIcon = (color: string, emoji: string) => {
+    return L.divIcon({
+      className: 'custom-icon',
+      html: `<div style="
+        background-color: ${color};
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: 2px solid white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        font-size: 24px;
+        font-weight: bold;
+      ">${emoji}</div>`,
+      iconSize: [40, 40],
+      iconAnchor: [20, 20],
+    });
+  };
 
 // Sample team data
 const teamMembers = [
-  {
-    id: 1,
-    name: 'Alex Chen',
-    status: 'online',
-    lastUpdate: '2 mins ago',
-    position: [46.8523, -121.7603], // Paradise Visitor Center
-    batteryLevel: 85,
-    signal: 'strong',
-    avatar: <BearIcon sx={{ color: '#795548' }} />,
-    icon: createCustomIcon(<BearIcon sx={{ fontSize: 24, color: '#795548' }} />),
-  },
-  {
-    id: 2,
-    name: 'Sarah Wang',
-    status: 'offline',
-    lastUpdate: '15 mins ago',
-    position: [46.8583, -121.7653], // Skyline Trail
-    batteryLevel: 45,
-    signal: 'weak',
-    avatar: <EagleIcon sx={{ color: '#607D8B' }} />,
-    icon: createCustomIcon(<EagleIcon sx={{ fontSize: 24, color: '#607D8B' }} />),
-  },
-  {
-    id: 3,
-    name: 'Mike Lin',
-    status: 'online',
-    lastUpdate: '1 min ago',
-    position: [46.8623, -121.7703], // Panorama Point
-    batteryLevel: 90,
-    signal: 'strong',
-    avatar: <DeerIcon sx={{ color: '#8D6E63' }} />,
-    icon: createCustomIcon(<DeerIcon sx={{ fontSize: 24, color: '#8D6E63' }} />),
-  },
-  {
-    id: 4,
-    name: 'Lisa Wu',
-    status: 'sos',
-    lastUpdate: 'Just now',
-    position: [46.8663, -121.7753], // Glacier Vista
-    batteryLevel: 20,
-    signal: 'weak',
-    avatar: <FoxIcon sx={{ color: '#FF5722' }} />,
-    icon: createCustomIcon(<FoxIcon sx={{ fontSize: 24, color: '#FF5722' }} />),
-  },
-];
+    {
+      id: 1,
+      name: 'Alex Chen',
+      status: 'online',
+      lastUpdate: '2 mins ago',
+      position: [46.8523, -121.7603], // Paradise Visitor Center
+      batteryLevel: 85,
+      signal: 'strong',
+      avatar: <BearIcon sx={{ color: '#795548' }} />,
+      icon: createCustomIcon('#795548', '🐻'),
+    },
+    {
+      id: 2,
+      name: 'Sarah Wang',
+      status: 'offline',
+      lastUpdate: '15 mins ago',
+      position: [46.8583, -121.7653], // Skyline Trail
+      batteryLevel: 45,
+      signal: 'weak',
+      avatar: <EagleIcon sx={{ color: '#607D8B' }} />,
+      icon: createCustomIcon('#607D8B', '🦅'),
+    },
+    {
+      id: 3,
+      name: 'Mike Lin',
+      status: 'online',
+      lastUpdate: '1 min ago',
+      position: [46.8623, -121.7703], // Panorama Point
+      batteryLevel: 90,
+      signal: 'strong',
+      avatar: <DeerIcon sx={{ color: '#8D6E63' }} />,
+      icon: createCustomIcon('#8D6E63', '🦌'),
+    },
+    {
+      id: 4,
+      name: 'Lisa Wu',
+      status: 'sos',
+      lastUpdate: 'Just now',
+      position: [46.8663, -121.7753], // Glacier Vista
+      batteryLevel: 20,
+      signal: 'weak',
+      avatar: <FoxIcon sx={{ color: '#FF5722' }} />,
+      icon: createCustomIcon('#FF5722', '🦊'),
+    },
+  ];
 
 const recentMessages = [
   {
@@ -233,38 +235,38 @@ export default function TeamCollaboration() {
             borderRadius: '12px',
             boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
           }}>
-            <MapContainer
-              center={[46.8593, -121.7678]}
-              zoom={13}
-              style={{ height: '100%', width: '100%' }}
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
-              />
-              {teamMembers.map((member) => (
-                <Marker
-                  key={member.id}
-                  position={member.position as [number, number]}
-                  icon={member.icon}
-                >
-                  <Popup>
-                    <Typography variant="subtitle1" fontWeight="bold">
-                      {member.name}
-                    </Typography>
-                    <Typography variant="body2">
-                      Status: {member.status}
-                      <br />
-                      Battery: {member.batteryLevel}%
-                      <br />
-                      Signal: {member.signal}
-                      <br />
-                      Location: Mt. Rainier National Park
-                    </Typography>
-                  </Popup>
-                </Marker>
-              ))}
-            </MapContainer>
+        <MapContainer
+  center={[46.8593, -121.7678]}
+  zoom={13}
+  style={{ height: '100%', width: '100%' }}
+>
+  <TileLayer
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  />
+  {teamMembers.map((member) => (
+    <Marker
+      key={member.id}
+      position={member.position as [number, number]}
+      icon={member.icon}
+    >
+      <Popup>
+        <Typography variant="subtitle1" fontWeight="bold">
+          {member.name}
+        </Typography>
+        <Typography variant="body2">
+          Status: {member.status}
+          <br />
+          Battery: {member.batteryLevel}%
+          <br />
+          Signal: {member.signal}
+          <br />
+          Location: Mt. Rainier National Park
+        </Typography>
+      </Popup>
+    </Marker>
+  ))}
+</MapContainer>
           </Paper>
         </Grid>
 
