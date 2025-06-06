@@ -35,16 +35,16 @@ Users can revisit their routes, mark important moments, add personal notes and p
 
 | Week | Tasks | Process |
 |------|-------|---------|
-| Week 1 | Project planning and user research |  |
-| Week 2 | User journey mapping and persona creation |  |
-| Week 3 | Initial UI wireframes and interaction design |  |
-| Week 4 | Backend architecture and database setup |  |
-| Week 5 | Path data parsing and memory tagging features |  |
-| Week 6 | Designing animated journey recap flow |  |
-| Week 7 | Developing animal companion and emotion recording system | ongoing |
-| Week 8 | Front-end and back-end integration, user testing |  |
-| Week 9 | Animation optimization, sharing feature implementation, and bug fixing |  |
-| Week 10 | Final testing, deployment, and user documentation |  |
+| Week 1 | Project planning and user research | Finished |
+| Week 2 | User journey mapping and persona creation | Finished |
+| Week 3 | Initial UI wireframes and interaction design | Finished |
+| Week 4 | Backend architecture and database setup | Finished |
+| Week 5 | Path data parsing and memory tagging features | Finished |
+| Week 6 | Designing animated journey recap flow | Finished |
+| Week 7 | Developing animal companion and emotion recording system | Finished |
+| Week 8 | Front-end and back-end integration, user testing | Finished |
+| Week 9 | Animation optimization, sharing feature implementation, and bug fixing | Finished |
+| Week 10 | Final testing, deployment, and user documentation | Finished |
 
 ---
 
