@@ -114,10 +114,3 @@ UI and animations are being optimized for a smoother experience.
 - Mobile performance improvements are still in progress.
 
 ---
-
-## Contact Information of the Team
-
-- **Joyce Chou**  
-  Email: ychou3@uw.edu
-- **Katherine Chen**  
-  Email: ejchen99@uw.edu
